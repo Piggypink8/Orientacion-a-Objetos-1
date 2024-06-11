@@ -7,16 +7,16 @@ import java.util.Comparator;
 
 public class TikTok {
 	
-	private ArrayList<User> users;
+	private ArrayList<BussinessAccount> bussinessAccounts;
 	private ArrayList<Video> videos;
 	
 	public TikTok() {
-		this.users = new ArrayList<>();
+		this.bussinessAccounts = new ArrayList<>();
 		this.videos = new ArrayList<>();
 	}
 
-	public ArrayList<User> getUsers() {
-		return users;
+	public ArrayList<BussinessAccount> getBussinessAccounts() {
+		return bussinessAccounts;
 	}
 
 	public ArrayList<Video> getVideos() {
@@ -25,7 +25,6 @@ public class TikTok {
 	
 	public User createUser(Account typeAccount) {
 		User user = new User(typeAccount);
-		this.users.add(user);
 		return user;
 	}
 	
@@ -53,6 +52,12 @@ public class TikTok {
 		return this.videos.stream()
 		.max(Comparator.comparing(video -> video.countComments()))
 		.orElse(null);
+	}
+	
+	public BussinessAccount getBussinessWithHighestProductsAmount() {
+		return this.bussinessAccounts.stream()
+				.max(Comparator.comparing(account -> account.calculateProductsPriceAmount()))
+				.orElse(null);
 	}
 	
 }
