@@ -31,7 +31,15 @@ public class PlanMantenimiento {
 		this.tareas.add(tarea);
 	}
 	
-	public void obtenerCostoPlan() {
-		// ANALIZAR POSIBLE SOLUCION
+	public double obtenerCostoPlanMantenimiento() {
+		return this.modelos.stream()
+			.mapToDouble(modelo -> modelo.calcularCostoPlanMantenimiento())
+			.sum();
+	}
+	
+	public double calcularCostoTareasPlanMantenimiento(Tren tren) {
+		return this.tareas.stream()
+			.mapToDouble(tarea -> tarea.obtenerCostoTarea(tren))
+			.sum();
 	}
 }
