@@ -26,5 +26,11 @@ public class Modelo {
 	public void agregarTren(Tren tren) {
 		this.trenes.add(tren);
 	}
+
+	public double calcularCostoPlanMantenimiento() {
+		return this.trenes.stream()
+			.mapToDouble(tren -> this.getPlan().calcularCostoTareasPlanMantenimiento(tren))
+			.sum();
+	}
 	
 }
