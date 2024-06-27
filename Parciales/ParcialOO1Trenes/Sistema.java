@@ -58,11 +58,9 @@ public class Sistema {
 	}
 	
 	// ANALIZAR POSIBLE SOLUCION
-	/*
 	public List<PlanMantenimiento> obtener5PlanesMantenimientoMasCostosos(){
 		return this.planes.stream()
-				.max((plan1,plan2) -> Double.compare(plan1.obtenerCostoPlan(), plan2.obtenerCostoPlan()))
-				.
+			.sorted((plan1,plan2) -> Double.compare(plan1.obtenerCostoPlanMantenimiento(), plan2.obtenerCostoPlanMantenimiento()))
+			.limit(5).collect(Collectors.toList());
 	}
-	*/
 }
