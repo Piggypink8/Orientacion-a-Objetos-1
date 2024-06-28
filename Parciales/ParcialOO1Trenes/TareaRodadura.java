@@ -3,8 +3,8 @@ package ar.edu.unlp.info.oo1.ParcialOO1Trenes;
 public class TareaRodadura extends Tarea{
 	private int cantKm;
 	
-	public TareaRodadura(String id, int tiempo, double costoBase, int cantKm) {
-		super(id, tiempo, costoBase);
+	public TareaRodadura(String id, double costoBase, int cantKm) {
+		super(id, costoBase);
 		this.cantKm = cantKm;
 	}
 
