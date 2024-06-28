@@ -5,24 +5,18 @@ import java.util.List;
 
 public abstract class Tarea {
 	private String id;
-	private int tiempo;
 	private double costoBase;
 	private List<Repuesto> repuestos;
 	
-	public Tarea(String id, int tiempo, double costoBase) {
+	public Tarea(String id, double costoBase) {
 		super();
 		this.id = id;
-		this.tiempo = tiempo;
 		this.costoBase = costoBase;
 		this.repuestos = new ArrayList<>();
 	}
 
 	public String getId() {
 		return id;
-	}
-
-	public int getTiempo() {
-		return tiempo;
 	}
 
 	public double getCostoBase() {
