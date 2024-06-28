@@ -3,8 +3,8 @@ package ar.edu.unlp.info.oo1.ParcialOO1Trenes;
 public class TareaPeriodica extends Tarea {
 	private int cantDias;
 	
-	public TareaPeriodica(String id, int tiempo, double costoBase, int cantDias) {
-		super(id, tiempo, costoBase);
+	public TareaPeriodica(String id, double costoBase, int cantDias) {
+		super(id, costoBase);
 		this.cantDias = cantDias;
 		// TODO Auto-generated constructor stub
 	}
