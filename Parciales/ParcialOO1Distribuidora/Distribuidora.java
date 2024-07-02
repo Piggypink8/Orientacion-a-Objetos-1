@@ -44,6 +44,11 @@ public class Distribuidora {
 		return pedido;
 	}
 	
+	public Item agregarItemAPedido(Pedido pedido, Producto producto, int cantidad) {
+		Item item = new Item(cantidad, producto);
+		pedido.agregarItem(item);
+		return item;
+	}
 	
 	public int calcularCantidadTotalSolicitadaProducto(Producto producto) {
 		return this.getPedidos().stream()
