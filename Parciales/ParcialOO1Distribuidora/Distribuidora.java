@@ -38,8 +38,8 @@ public class Distribuidora {
 		return producto;
 	}
 	
-	public Pedido crearPedido(Producto producto, int cantidad, Cliente cliente) {
-		Pedido pedido = new Pedido(producto, cantidad);
+	public Pedido crearPedido(Cliente cliente) {
+		Pedido pedido = new Pedido();
 		cliente.agregarPedido(pedido);
 		return pedido;
 	}
