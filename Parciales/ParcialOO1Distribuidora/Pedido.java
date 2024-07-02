@@ -7,11 +7,9 @@ import java.util.stream.Collectors;
 
 public class Pedido {
 	private LocalDate fecha;
-	private int cantidad;
 	private List<Item> items;
 	
-	public Pedido( Producto producto, int cantidad) {
-		this.cantidad = cantidad;
+	public Pedido() {
 		this.items = new ArrayList<>();
 		this.fecha = LocalDate.now();
 	}
