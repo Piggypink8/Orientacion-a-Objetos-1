@@ -1,0 +1,246 @@
+<mxfile host="app.diagrams.net" modified="2024-07-06T17:06:09.851Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0" etag="Atn4VgXD4CIGfK5Y17b9" version="24.6.4" type="device">
+  <diagram name="Página-1" id="n6-sVwAWyf8gHnhXfX__">
+    <mxGraphModel dx="2169" dy="1588" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="yovhA4nv8gZV7ZrJ8D_x-1" target="yovhA4nv8gZV7ZrJ8D_x-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-1" value="Veterinaria" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-8.75" y="50" width="327.5" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="yovhA4nv8gZV7ZrJ8D_x-1" vertex="1">
+          <mxGeometry y="26" width="327.5" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-1" value="+ &amp;lt;create&amp;gt; Veterinaria()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-1">
+          <mxGeometry y="34" width="327.5" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-3" value="+ registrarMedico(nombre: String, ingreso: LocalDate, honorarios: double): MedicoVeterinario" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-1">
+          <mxGeometry y="50" width="327.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-4" value="+ registrarMascota(nombre, String, fechaNac: LocalDate, especie: String): Mascota" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="yovhA4nv8gZV7ZrJ8D_x-1" vertex="1">
+          <mxGeometry y="80" width="327.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-5" value="+ registrarServicioConsulta(medico: MedicoVeterinario, mascota: Mascota): Servicio" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-1">
+          <mxGeometry y="110" width="327.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-4" value="+ registrarServicioGuarderia(cantDias: int, mascota: Mascota): Servicio" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-1">
+          <mxGeometry y="140" width="327.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-7" value="+ registrarServicioVacunacion(medico: MedicoVeterinario, mascota: Mascota, vacuna: Vacuna): Servicio" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-1">
+          <mxGeometry y="170" width="327.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-8" value="+ obtenerRecaudacionCachorrosFecha(fecha: LocalDate): double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-1">
+          <mxGeometry y="200" width="327.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-10" value="+ obtenerRecaudacionMascotaFecha(mascota: Mascota, fecha: LocalDate): double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-1">
+          <mxGeometry y="230" width="327.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-9" value="- obtenerVisitasCachorrosFecha(fecha: LocalDate): Servicio[*]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-1">
+          <mxGeometry y="260" width="327.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-11" value="- obtenerVisitasCachorros(): Servicio[*]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-1">
+          <mxGeometry y="290" width="327.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-5" value="MedicoVeterinario" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-460" y="580" width="240" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-6" value="- nombre: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="yovhA4nv8gZV7ZrJ8D_x-5" vertex="1">
+          <mxGeometry y="26" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-10" value="- ingreso: LocalDate" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="yovhA4nv8gZV7ZrJ8D_x-5" vertex="1">
+          <mxGeometry y="52" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-9" value="- costoAtencion: double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="yovhA4nv8gZV7ZrJ8D_x-5" vertex="1">
+          <mxGeometry y="78" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="yovhA4nv8gZV7ZrJ8D_x-5" vertex="1">
+          <mxGeometry y="104" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-8" value="+ &amp;lt;create&amp;gt; MedicoVeterinario&lt;span style=&quot;background-color: initial;&quot;&gt;(nombre: String, ingreso: LocalDate, costoAtencion: double)&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="yovhA4nv8gZV7ZrJ8D_x-5" vertex="1">
+          <mxGeometry y="112" width="240" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-27" value="+ obtenerAdicionalAntiguedad():int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-5">
+          <mxGeometry y="160" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-28" value="+ obtenerHonorarios():double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-5">
+          <mxGeometry y="180" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="yovhA4nv8gZV7ZrJ8D_x-11" target="yovhA4nv8gZV7ZrJ8D_x-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-11" value="Mascota" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="370" y="450" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-12" value="- nombre: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="yovhA4nv8gZV7ZrJ8D_x-11" vertex="1">
+          <mxGeometry y="26" width="180" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-15" value="- fechaNacimiento: LocalDate" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="yovhA4nv8gZV7ZrJ8D_x-11" vertex="1">
+          <mxGeometry y="50" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-16" value="- especie: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="yovhA4nv8gZV7ZrJ8D_x-11" vertex="1">
+          <mxGeometry y="70" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="yovhA4nv8gZV7ZrJ8D_x-11" vertex="1">
+          <mxGeometry y="96" width="180" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-14" value="+ &amp;lt;create&amp;gt; Mascota(nombre: String, fechaNacimiento: LocalDate, especie: String)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="yovhA4nv8gZV7ZrJ8D_x-11" vertex="1">
+          <mxGeometry y="104" width="180" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-17" value="&amp;lt;abstract&amp;gt;&lt;div&gt;&amp;nbsp;Servicio&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=38;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="460" width="210" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-18" value="- fechaAtencion: LocalDate" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="yovhA4nv8gZV7ZrJ8D_x-17" vertex="1">
+          <mxGeometry y="38" width="210" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="yovhA4nv8gZV7ZrJ8D_x-17" vertex="1">
+          <mxGeometry y="64" width="210" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-20" value="+&amp;lt;create&amp;gt; Servicio(mascota: Mascota)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="yovhA4nv8gZV7ZrJ8D_x-17" vertex="1">
+          <mxGeometry y="72" width="210" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-13" value="+ obtenerCosto():double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-17">
+          <mxGeometry y="110" width="210" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-14" value="+ calcularMonto(): double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-17">
+          <mxGeometry y="130" width="210" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;" parent="1" source="yovhA4nv8gZV7ZrJ8D_x-21" target="yovhA4nv8gZV7ZrJ8D_x-41" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-40" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-21" value="ServicioConsulta" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-400" y="826" width="310" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-23" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="yovhA4nv8gZV7ZrJ8D_x-21" vertex="1">
+          <mxGeometry y="26" width="310" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-25" value="+&amp;lt;create&amp;gt; ServicioConsulta(medico:&amp;nbsp;&lt;span style=&quot;text-align: center;&quot;&gt;MedicoVeterinario&lt;/span&gt;, mascota: Mascota)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="yovhA4nv8gZV7ZrJ8D_x-21" vertex="1">
+          <mxGeometry y="34" width="310" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-26" value="+ obtenerCostoAdicionalMaterialDescartable():double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-21">
+          <mxGeometry y="70" width="310" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-23" value="+ calcularMonto():double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-21">
+          <mxGeometry y="90" width="310" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="yovhA4nv8gZV7ZrJ8D_x-26" target="yovhA4nv8gZV7ZrJ8D_x-30" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;" parent="1" source="yovhA4nv8gZV7ZrJ8D_x-26" target="yovhA4nv8gZV7ZrJ8D_x-41" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-26" value="ServicioVacunacion" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-60" y="820" width="310" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-27" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="yovhA4nv8gZV7ZrJ8D_x-26" vertex="1">
+          <mxGeometry y="26" width="310" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-28" value="+&amp;lt;create&amp;gt; ServicioConsulta(medico:&amp;nbsp;&lt;span style=&quot;text-align: center;&quot;&gt;MedicoVeterinario&lt;/span&gt;, mascota: Mascota, nombreVacuna: String)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="yovhA4nv8gZV7ZrJ8D_x-26" vertex="1">
+          <mxGeometry y="34" width="310" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-24" value="+ calcularMonto():double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-26">
+          <mxGeometry y="70" width="310" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-25" value="+ obtenerCostoAdicionalMaterialDescartable():double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-26">
+          <mxGeometry y="90" width="310" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-22" value="+ obtenerCostoVacuna():double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-26">
+          <mxGeometry y="110" width="310" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-30" value="Vacuna" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="15" y="980" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-31" value="- nombre: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="yovhA4nv8gZV7ZrJ8D_x-30" vertex="1">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-34" value="- costo: double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="yovhA4nv8gZV7ZrJ8D_x-30" vertex="1">
+          <mxGeometry y="52" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-32" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="yovhA4nv8gZV7ZrJ8D_x-30" vertex="1">
+          <mxGeometry y="78" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-33" value="+&amp;lt;create&amp;gt; Vacuna(nombre: String, costo: double)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="yovhA4nv8gZV7ZrJ8D_x-30" vertex="1">
+          <mxGeometry y="86" width="160" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-36" value="1 vacuna" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="95" y="950" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" parent="1" source="yovhA4nv8gZV7ZrJ8D_x-37" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-37" value="ServicioGuarderia" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="270" y="650" width="220" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-38" value="- cantDias: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="yovhA4nv8gZV7ZrJ8D_x-37" vertex="1">
+          <mxGeometry y="26" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-39" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="yovhA4nv8gZV7ZrJ8D_x-37" vertex="1">
+          <mxGeometry y="52" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-40" value="+&amp;lt;create&amp;gt; ServicioGuarderia(mascota: Mascota, cantDias: int)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="yovhA4nv8gZV7ZrJ8D_x-37" vertex="1">
+          <mxGeometry y="60" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-15" value="+ calcularMonto():double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-37">
+          <mxGeometry y="100" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-16" value="+ getCostoDiario():double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-37">
+          <mxGeometry y="120" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-18" value="+ calcularDescuento(): double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-37">
+          <mxGeometry y="140" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-17" value="+ validarDescuento(): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-37">
+          <mxGeometry y="160" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="yovhA4nv8gZV7ZrJ8D_x-41" target="yovhA4nv8gZV7ZrJ8D_x-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-41" value="ServicioMedico" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-135" y="650" width="300" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-43" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="yovhA4nv8gZV7ZrJ8D_x-41" vertex="1">
+          <mxGeometry y="26" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-44" value="+&amp;lt;create&amp;gt; ServicioMedico(mascota: Mascota, medico:&amp;nbsp;&lt;span style=&quot;text-align: center;&quot;&gt;MedicoVeterinario&lt;/span&gt;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="yovhA4nv8gZV7ZrJ8D_x-41" vertex="1">
+          <mxGeometry y="34" width="300" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-19" value="+ obtenerHonorariosMedico():double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-41">
+          <mxGeometry y="70" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-20" value="+ obtenerAdicionalDomingo():double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-41">
+          <mxGeometry y="90" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rtKth9LY5wfFraGsRjfr-21" value="+ obtenerCostoAdicionalMaterialDescartable():double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yovhA4nv8gZV7ZrJ8D_x-41">
+          <mxGeometry y="110" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" parent="1" source="yovhA4nv8gZV7ZrJ8D_x-41" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="yovhA4nv8gZV7ZrJ8D_x-18" target="yovhA4nv8gZV7ZrJ8D_x-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-52" value="1 mascota" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="260" y="480" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-53" value="1 medicoVeterinario" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-220" y="580" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-56" value="0...* serviciosRecibidos" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="280" y="400" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yovhA4nv8gZV7ZrJ8D_x-59" value="0...* visitas" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="150" y="370" width="80" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
