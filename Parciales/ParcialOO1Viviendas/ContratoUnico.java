@@ -9,4 +9,11 @@ public class ContratoUnico extends Contrato {
 		// TODO Auto-generated constructor stub
 	}
 
+	@Override
+	public double calcularAdicional() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
 }
