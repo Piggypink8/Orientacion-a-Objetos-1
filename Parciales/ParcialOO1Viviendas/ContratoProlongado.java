@@ -14,4 +14,17 @@ public class ContratoProlongado extends Contrato {
 		return cantDias;
 	}
 
+	@Override
+	public double calcularAdicional() {
+		if(this.validarDias()) {
+			return -0.10;
+		}
+		return 0;
+	}
+	public boolean validarDias() {
+		if(this.getCantDias() > 5) {
+			return true;
+		}
+		return false;
+	}
 }
