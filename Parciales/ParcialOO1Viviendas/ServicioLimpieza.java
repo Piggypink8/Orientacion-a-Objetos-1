@@ -12,6 +12,14 @@ public class ServicioLimpieza extends Servicio {
 		return tarifaMinima;
 	}
 	
+	@Override
+	public double calcularMonto() {
+		double monto = this.getPrecioPorHora() * this.getCantHoras();
+		if(monto < this.getTarifaMinima()) {
+			return this.getTarifaMinima();
+		}
+		return monto;
+	}
 	
 	
 }
