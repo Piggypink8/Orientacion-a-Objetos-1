@@ -18,5 +18,13 @@ public class ServicioParquizacion extends Servicio {
 	public double getCostoMantenimiento() {
 		return costoMantenimiento;
 	}
+
+	@Override
+	public double calcularMonto() {
+		return this.getPrecioPorHora() * this.getCantHoras() + this.calcularCostoMaquinas();
+	}
 	
+	private double calcularCostoMaquinas() {
+		return this.getCostoMantenimiento() * this.getCantMaquinas();
+	}
 }
