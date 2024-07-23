@@ -13,11 +13,14 @@ public abstract class Servicio {
 		return precioPorHora;
 	}
 
-
 	public int getCantHoras() {
 		return cantHoras;
 	}
 	
+	public double obtenerMonto() {
+		return this.calcularMonto();
+	}
 	
+	public abstract double calcularMonto();
 	
 }
