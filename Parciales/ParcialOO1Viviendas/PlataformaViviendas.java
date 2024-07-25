@@ -17,11 +17,13 @@ public class PlataformaViviendas {
 	
 	public Servicio registrarServicioParquizacion(double precioPorHora, int cantHoras, int cantMaquinas, double costoMantenimiento) {
 		Servicio servicioParquizacion = new ServicioParquizacion(precioPorHora, cantHoras, cantMaquinas, costoMantenimiento);
+		this.servicios.add(servicioParquizacion);
 		return servicioParquizacion;
 	}
 	
 	public Servicio registrarServicioLimpieza(double precioPorHora, int cantHoras, double tarifaMinima) {
 		Servicio servicioLimpieza = new ServicioLimpieza(precioPorHora, cantHoras, tarifaMinima);
+		this.servicios.add(servicioLimpieza);
 		return servicioLimpieza;
 	}
 
@@ -41,5 +43,15 @@ public class PlataformaViviendas {
 	
 	public double obtenerMontoAPagarCliente(Cliente cliente) {
 		return cliente.obtenerMontoServiciosContratados();
+	}
+	
+	private List<Servicio> obtenerServiciosConMontoMayorA(double valor) {
+		return this.getServicios().stream()
+				.filter(servicio -> servicio.obtenerMonto() > valor)
+				.collect(Collectors.toList());
+	}
+	
+	public int obtenerCantidadServiciosConMontoMayorA(double valor) {
+		return this.obtenerServiciosConMontoMayorA(valor).size();
 	}
 }
