@@ -1,4 +1,4 @@
 ## To do:
 
-  -  implementar método obtenerCantidadServiciosConMontoMayorA()
+  - Actualizar métodos UML
   -  test para  método obtenerMontoAPagarCliente()
